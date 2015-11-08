@@ -1,0 +1,10 @@
+{
+  "name": "polisys/qandidate-toggle-extras",
+  "version": "1.0",
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=5.3.3",
+    "qandidate/toggle": "0.1.*"
+  }
+}
