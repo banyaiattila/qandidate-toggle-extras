@@ -19,7 +19,29 @@ class LoadToggle
     /**@var Context $context */
     protected $context;
 
+    /**@var SiteRegistry $siteRegistry */
+    protected $siteRegistry;
 
+    /**@var string $site */
+    protected $site;
+
+    public function __construct()
+    {
+        $this->manager = new ToggleManager(new InMemoryCollection());
+        $this->context = new Context();
+        $this->siteRegistry = new SiteRegistry();
+    }
+
+    /**
+     * @return Context
+     */
+    public function createContext($site){
+        $this->site=$site;
+        $this->context->set("site", $this->site);
+        $this->context->set("now",new \DateTime());
+
+        return $this->context;
+    }
 
     /**
      * @return ToggleManager
@@ -30,11 +52,36 @@ class LoadToggle
     }
 
     /**
+     * @return mixed
+     */
+    public function getSiteRegistry()
+    {
+        return $this->siteRegistry;
+    }
+
+    /**
      * @return Context
      */
     public function getContext()
     {
         return $this->context;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getSite()
+    {
+        return $this->site;
+    }
+
+    /**
+     * @param mixed $site
+     */
+    public function setSite($site)
+    {
+        $this->site = $site;
+    }
+
 
 }

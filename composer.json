@@ -1,5 +1,6 @@
 {
   "name": "polisys/qandidate-toggle-extras",
+  "description": "Feature toggling for your PHP application.",
   "version": "1.0",
   "license": "MIT",
   "type": "project",
