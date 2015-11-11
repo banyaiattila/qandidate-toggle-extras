@@ -47,12 +47,12 @@ class SiteRegistry
      */
     public function getCurrentSiteByKey($key)
     {
-        $matches = array_filter($this->sites, function (/** @var Site $elem */
-            $elem) use ($key) {
-            if ($elem->getKey() == $key) {
-                return true;
-            }
-        });
+        $matches = array_filter($this->sites,
+            function (/** @var Site $elem */$elem) use ($key) {
+                if ($elem->getKey() == $key) {
+                    return true;
+                }
+            });
 
         if (count($matches) == 1) {
             return array_pop($matches);

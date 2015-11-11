@@ -28,3 +28,4 @@ class UnanimousToggle extends AffirmativeToggle
         return true;
     }
 }
+

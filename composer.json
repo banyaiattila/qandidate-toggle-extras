@@ -3,7 +3,7 @@
   "description": "Feature toggling for your PHP application.",
   "version": "1.0",
   "license": "MIT",
-  "type": "project",
+  "type": "library",
   "require": {
     "php": ">=5.3.3",
     "qandidate/toggle": "0.1.*"
