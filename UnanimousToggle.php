@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Polisys\GandidateToggleExtras;
+namespace Polisys\QandidateToggleExtras;
 
 
 use Qandidate\Toggle\Context;

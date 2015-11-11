@@ -1,6 +1,6 @@
 <?php
 
-namespace Polisys\GandidateToggleExtras;
+namespace Polisys\QandidateToggleExtras;
 
 use Qandidate\Toggle\Context;
 use Qandidate\Toggle\Operator\LessThan;

@@ -1,5 +1,5 @@
 <?php
-namespace Polisys\GandidateToggleExtras;
+namespace Polisys\QandidateToggleExtras;
 
 class SiteRegistry
 {
