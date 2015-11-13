@@ -18,4 +18,7 @@ Install the dependencies with composer:
 
 $ composer require polisys/qandidate-toggle-extras
 
+How to use
+========================
 
+In the examples folder you'll see the basic usage of the Toggle library.
