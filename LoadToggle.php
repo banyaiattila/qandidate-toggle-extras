@@ -3,12 +3,8 @@
 namespace Polisys\QandidateToggleExtras;
 
 use Qandidate\Toggle\Context;
-use Qandidate\Toggle\Operator\LessThan;
-use Qandidate\Toggle\OperatorCondition;
-use Qandidate\Toggle\Toggle;
 use Qandidate\Toggle\ToggleCollection\InMemoryCollection;
 use Qandidate\Toggle\ToggleManager;
-use Qandidate\Toggle\Operator\InSet;
 
 
 class LoadToggle
@@ -81,6 +77,15 @@ class LoadToggle
     public function setSite($site)
     {
         $this->site = $site;
+    }
+
+    /**
+     * @param $key
+     * @param $assetDirectory
+     * @return SiteRegistry
+     */
+    public function addSite($key, $assetDirectory){
+        return $this->getSiteRegistry()->addSite(new Site($key,$assetDirectory));
     }
 
 
