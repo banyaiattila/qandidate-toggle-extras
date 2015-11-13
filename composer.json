@@ -9,6 +9,8 @@
     "qandidate/toggle": "0.1.*"
   },
   "autoload": {
-    "psr-4": {"Polisys\\QandidateToggleExtras\\": "polisys/qandidate-toggle-extras/"}
+    "psr-4": {
+      "Polisys\\QandidateToggleExtras\\": "src/"
+    }
   }
 }
